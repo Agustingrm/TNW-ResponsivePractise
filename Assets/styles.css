@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+
+* {
+  border: red 1px solid;
+}
+
+header {
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav:first-child {
+  height: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  height: 20px;
+  margin: 0 5px;
+}
+
+.downArrow {
+  height: 10px;
+}
+
+.firstSection {
+  padding: 5vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 10vw 10vw;
+  column-gap: 70vw;
+}

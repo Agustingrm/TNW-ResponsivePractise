@@ -7,18 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="Assets/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="screen" href="Assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
       <nav>
         <img src="Assets/images/tnw.svg" alt="TNW" />
         <ul>
-          <li>Home</li>
-          <li>News <img src="Assets/images/downArrow.svg" alt="Arrow" class="downArrow" /></li>
-          <li>Events <img src="Assets/images/downArrow.svg" alt="Arrow" class="downArrow" /></li>
-          <li>Programs</li>
-          <li>Spaces</li>
-          <li>More <img src="Assets/images/downArrow.svg" alt="Arrow" class="downArrow" /></li>
+          <li>HOME</li>
+          <li>NEWS <img src="Assets/images/downArrow.svg" alt="Arrow" class="downArrow" /></li>
+          <li>EVENTS <img src="Assets/images/downArrow.svg" alt="Arrow" class="downArrow" /></li>
+          <li>PROGRAMS</li>
+          <li>SPACES</li>
+          <li>MORE <img src="Assets/images/downArrow.svg" alt="Arrow" class="downArrow" /></li>
         </ul>
         <img src="Assets/images/mailIcon.svg" alt="Messages" />
       </nav>
@@ -30,33 +33,43 @@
     <section class="mainSection">
       <div class="topLeftMainSection">
         <img src="Assets/images/onlyFans.jpg" alt="Only Fans" />
-        <p>PORN</p>
-        <p>OnlyFans wants to find ‘solutions’ for sex workers after its stupid porn ban</p>
+        <div class="gridText">
+          <p>PORN</p>
+          <p>OnlyFans wants to find ‘solutions’ for sex workers after its stupid porn ban</p>
+        </div>
       </div>
       <div class="topRightFirstMainSection">
         <img src="Assets/images/mario64.jpg" alt="mario 64" />
-        <p>PLUGGED</p>
-        <p>Someone ported Super Mario 64 to play in a browser (again)</p>
+        <div class="gridText">
+          <p>PLUGGED</p>
+          <p>Someone ported Super Mario 64 to play in a browser (again)</p>
+        </div>
       </div>
       <div class="topRightSecondMainSection">
         <img src="Assets/images/quantumStuff.jpg" alt="quantum stuff" />
-        <p>QUANTUM STUFF</p>
-        <p>How a simple crystal could help pave the way to full-scale quantum computing</p>
+        <div class="gridText">
+          <p>QUANTUM STUFF</p>
+          <p>How a simple crystal could help pave the way to full-scale quantum computing</p>
+        </div>
       </div>
       <div class="bottomLeftMainSection">
         <img src="Assets/images/homeAdvert.jpg" alt="conference advert" />
-        <p>The countdown has started TNW Conference 2021 is less than 50 days away!</p>
-        <button>GET TICKETS!</button>
+        <div class="gridText">
+          <p>The countdown has started TNW Conference 2021 is less than 50 days away!</p>
+          <button>GET TICKETS</button>
+        </div>
       </div>
       <div class="bottomRightMainSection">
         <img src="Assets/images/plugged.jpg" alt="Gadgets" />
-        <p>PLUGGED</p>
-        <p>These are the best gear and gadgets for travelers</p>
+        <div class="gridText">
+          <p>PLUGGED</p>
+          <p>These are the best gear and gadgets for travelers</p>
+        </div>
       </div>
     </section>
     <section class="popularArticles">
-      <h2>POPULAR ARTICLES</h2>
-      <div class="popularArticles">
+      <h2>POPULAR ARTICLES TODAY</h2>
+      <div>
         <p>1</p>
         <p>Theoretical physicists think humans are screwing up the universe’s plan</p>
         <p>2</p>
@@ -118,34 +131,43 @@
     <section class="channels">
       <h2>Explore our channels</h2>
       <div>
-        <div class="plugg">
+        <div class="plugg channelStyle">
           <img src="Assets/images/plugg.svg" alt="plugg" />
           <p>Your sardonic source for consumer tech stories</p>
         </div>
-        <div class="neural">
+        <div class="neural channelStyle">
           <img src="Assets/images/neural.svg" alt="neural" />
           <p>Human-centric AI news and analysis</p>
         </div>
-        <div class="shift">
+        <div class="shift channelStyle">
           <img src="Assets/images/shift.svg" alt="shift" />
           <p>Driving the future of sustainable mobility</p>
         </div>
-        <div class="growthQuarters">
+        <div class="growthQuarters channelStyle">
           <img src="Assets/images/growthQuarters.svg" alt="growth quarters" />
           <p>No-nonsense perspectives on startup growth</p>
         </div>
-        <div class="hardfork">
+        <div class="hardfork channelStyle">
           <img src="Assets/images/hardfork.svg" alt="hard fork" />
           <p>Inside money, markets, and Big Tech</p>
         </div>
       </div>
     </section>
-    <section class="suscribe">
+    <section class="subscribe">
       <h2>Get the snarkiest newsletter in tech</h2>
-      <p>Subscribe to our twice-weekly <span>Big Spam</span> or check out our <span>other newsletters</span>.</p>
-      <div>
+      <p class="subscribeText">Subscribe to our twice-weekly <a href="#">Big Spam</a> or check out our <a href="#">other newsletters</a>.</p>
+      <div class='subscribeInput'>
+        <img src="Assets/images/mailIcon.svg" alt="mail icon" />
         <input type="text" placeholder="Enter Your Email" />
-        <button>Suscribe</button>
+        <button>SUBSCRIBE</button>
+      </div>
+      <div class='icons'>
+        <img src="Assets/images/facebookIcon.svg" alt="facebook" />
+        <img src="Assets/images/instagramIcon.svg" alt="instagram" />
+        <img src="Assets/images/twitterIcon.svg" alt="twitter" />
+        <img src="Assets/images/youtubeIcon.svg" alt="youtubeIcon" />
+        <img src="Assets/images/flipboardIcon.svg" alt="flipboard" />
+        <img src="Assets/images/linkedinIcon.svg" alt="linkedinIcon" />
       </div>
     </section>
     <section class="video">

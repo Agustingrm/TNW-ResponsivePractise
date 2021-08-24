@@ -13,8 +13,9 @@
   </head>
   <body>
     <header>
+      <img src="Assets/images/apps.svg" alt="apps menu" width="30px" class='appMenu'>
       <nav>
-        <img src="Assets/images/tnw.svg" alt="TNW" />
+        <img src="Assets/images/tnw.svg" alt="TNW" class='tnwHeaderLogo'/>
         <ul>
           <li>HOME</li>
           <li>NEWS <img src="Assets/images/downArrow.svg" alt="Arrow" class="downArrow" /></li>
@@ -23,7 +24,7 @@
           <li>SPACES</li>
           <li>MORE <img src="Assets/images/downArrow.svg" alt="Arrow" class="downArrow" /></li>
         </ul>
-        <img src="Assets/images/mailIcon.svg" alt="Messages" />
+        <img src="Assets/images/mailIcon.svg" alt="Messages" width="20px" />
       </nav>
     </header>
     <section class="firstSection">
@@ -39,28 +40,28 @@
         </div>
       </div>
       <div class="topRightFirstMainSection">
-        <img src="Assets/images/mario64.jpg" alt="mario 64" />
+        <img src="Assets/images/mario64.jpg" alt="mario 64" class='smallImagesResponsive' />
         <div class="gridText">
           <p>PLUGGED</p>
           <p>Someone ported Super Mario 64 to play in a browser (again)</p>
         </div>
       </div>
       <div class="topRightSecondMainSection">
-        <img src="Assets/images/quantumStuff.jpg" alt="quantum stuff" />
+        <img src="Assets/images/quantumStuff.jpg" alt="quantum stuff" class='smallImagesResponsive' />
         <div class="gridText">
           <p>QUANTUM STUFF</p>
           <p>How a simple crystal could help pave the way to full-scale quantum computing</p>
         </div>
       </div>
       <div class="bottomLeftMainSection">
-        <img src="Assets/images/homeAdvert.jpg" alt="conference advert" />
+        <img src="Assets/images/homeAdvert.jpg" alt="conference advert" class='smallImagesResponsive' />
         <div class="gridText">
           <p>The countdown has started TNW Conference 2021 is less than 50 days away!</p>
           <button>GET TICKETS</button>
         </div>
       </div>
       <div class="bottomRightMainSection">
-        <img src="Assets/images/plugged.jpg" alt="Gadgets" />
+        <img src="Assets/images/plugged.jpg" alt="Gadgets" class='smallImagesResponsive' />
         <div class="gridText">
           <p>PLUGGED</p>
           <p>These are the best gear and gadgets for travelers</p>
@@ -156,12 +157,12 @@
     <section class="subscribe">
       <h2>Get the snarkiest newsletter in tech</h2>
       <p class="subscribeText">Subscribe to our twice-weekly <a href="#">Big Spam</a> or check out our <a href="#">other newsletters</a>.</p>
-      <div class='subscribeInput'>
+      <div class="subscribeInput">
         <img src="Assets/images/mailIcon.svg" alt="mail icon" />
-        <input type="text" placeholder="Enter Your Email" />
+        <input type="text" placeholder="Email" />
         <button>SUBSCRIBE</button>
       </div>
-      <div class='icons'>
+      <div class="icons">
         <img src="Assets/images/facebookIcon.svg" alt="facebook" />
         <img src="Assets/images/instagramIcon.svg" alt="instagram" />
         <img src="Assets/images/twitterIcon.svg" alt="twitter" />
@@ -201,7 +202,7 @@
       </div>
     </section>
     <section class="workWithUs">
-      <div>
+      <div class="workWithUsLeft">
         <p>REACH YOUR GOALS</p>
         <h2>Work with us</h2>
         <p>
@@ -234,10 +235,10 @@
     </section>
     <footer>
       <div>
-        <img src="Assets/images/tnw.svg" alt="TNW" />
-        <p>The heart of tech</p>
+        <img src="Assets/images/tnwWhite.svg" alt="TNW" fill="blue" />
+        <p class="footerLogoDescription">The heart of tech</p>
       </div>
-      <div>
+      <div class="footerColumn">
         <h4>MORE TMW</h4>
         <p>Media</p>
         <p>Events</p>
@@ -245,7 +246,7 @@
         <p>Spaces</p>
         <p>Newsletter</p>
       </div>
-      <div>
+      <div class="footerColumn">
         <h4>ABOUT TMW</h4>
         <p>Partner with us</p>
         <p>Jobs</p>
@@ -254,10 +255,12 @@
         <p>Privacy Statement</p>
         <p>Editorial Policy</p>
       </div>
-      <div>
-        <p>TNW is a Financial Times company.</p>
-        <p>Copyright © 2006—2021, The Next Web B.V. Made with &lt;3 in Amsterdam.</p>
-      </div>
     </footer>
+    <hr />
+
+    <div class="copyright">
+      <p>TNW is a Financial Times company.</p>
+      <p>Copyright © 2006—2021, The Next Web B.V. Made with &lt;3 in Amsterdam.</p>
+    </div>
   </body>
 </html>

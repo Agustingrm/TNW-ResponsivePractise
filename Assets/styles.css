@@ -138,22 +138,37 @@ nav img {
   grid-column: 1/3;
   grid-row: 4/6;
   font-size: 20px;
+  display: flex;
 }
 
-.bottomLeftMainSection p {
-  font-size: 24px !important;
+.eventCell {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  align-items: center;
+}
+
+.eventCell p {
+  font-size: 16px !important;
   text-align: center;
   width: 100%;
+  margin: 10px auto;
+  display: block;
+  align-self: center;
+  width: 80%;
 }
 
-.bottomLeftMainSection button {
-  padding: 20px;
+.eventCell button {
+  padding: 10px;
   display: block;
   color: white;
   border-radius: 30px;
   border: solid white 1px;
   background-color: transparent;
   font-size: 16px;
+  width: 150px;
 }
 
 .bottomRightMainSection {
@@ -215,6 +230,10 @@ nav img {
   column-gap: 2.5vw;
 }
 
+.latestStories > div div :nth-child(1) {
+  width: 100%;
+}
+
 .latestStories > div div :nth-child(2) {
   font-size: 20px;
   font-weight: 600;
@@ -251,22 +270,21 @@ nav img {
 }
 
 .channels > div {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(5, minmax(15vw, 260px));
-  column-gap: 2vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
-.channels div {
-  width: minmax(15vw, 260px);
-  height: 235px;
+.channels > div div {
+  width: 18vw;
 }
 
 .channels div img {
-  width: 150px;
+  width: 130px;
 }
 
 .channelStyle {
+  background-size: cover;
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
@@ -574,28 +592,17 @@ hr {
   }
 
   .topRightSecondMainSection {
-    height: 20vw;
+    height: 40vw;
     width: 45vw;
     grid-column: 2/3;
     grid-row: 3/5;
   }
 
   .bottomLeftMainSection {
-    height: 20vw;
+    height: 40vw;
     width: 45vw;
     grid-column: 1/2;
     grid-row: 5/7;
-  }
-
-  .bottomLeftMainSection p {
-    position: absolute;
-    top: -10vh;
-    font-size: 15px !important;
-  }
-
-  .bottomLeftMainSection button {
-    padding: 10px;
-    font-size: 15px;
   }
 
   .bottomRightMainSection {
@@ -603,5 +610,192 @@ hr {
     width: 45vw;
     grid-column: 2/3;
     grid-row: 5/7;
+  }
+
+  .popularArticles {
+    width: 100vw;
+    text-align: center;
+  }
+  .popularArticles div {
+    grid-template-columns: 10% 80%;
+  }
+  .popularArticles div :nth-child(2n-1) {
+    font-size: 48px;
+    color: #c09;
+    margin: 25px 0;
+  }
+
+  .popularArticles div :nth-child(2n) {
+    justify-self: left;
+    font-weight: 600;
+    text-align: left;
+    padding: 20px 0 5px;
+  }
+
+  .latestStories > div {
+    grid-template-columns: repeat(2, 45vw);
+    column-gap: 2.5vw;
+  }
+  .channels {
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .channels h2 {
+    position: absolute;
+    text-align: center;
+    align-self: center;
+  }
+
+  .channels > div {
+    padding-top: 120px;
+    width: 1000px;
+    overflow-x: scroll;
+  }
+
+  .channels > div div {
+    width: 180px;
+  }
+  .subscribe {
+    height: 400px;
+  }
+
+  .subscribe h2 {
+    font-size: 36px;
+  }
+  .subscribeText {
+    font-size: 26px;
+  }
+  .subscribeInput input {
+    width: 50%;
+    font-size: 25px;
+    height: 30px;
+  }
+
+  .subscribeInput button {
+    padding: 2px 2px 0;
+    height: 35px;
+  }
+
+  .videoGrid {
+    grid-template-columns: 100vw;
+    grid-template-rows: 20vh 20vh 30vh 20vh;
+    justify-content: center;
+    column-gap: 0;
+  }
+
+  .videoTitle {
+    grid-row: 3/4;
+  }
+
+  .videoGrid iframe {
+    grid-row: 1/3;
+  }
+
+  .videoPreviews {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    overflow-x: scroll;
+    height: 300px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 200px);
+    grid-row: 300px 200px;
+  }
+
+  .videoPreviews :nth-child(2n) {
+    grid-row: 2/3;
+  }
+
+  .workWithUs {
+    grid-template-columns: 80vw;
+  }
+
+  .offeredServices {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    align-items: center;
+  }
+
+  .offeredServicesSecondRow {
+    grid-row: 2/3;
+    width: 112px;
+    text-align: center;
+  }
+
+  .offeredServicesFouthRow {
+    grid-row: 4/5;
+    width: 112px;
+    text-align: center;
+  }
+
+  .companies {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    column-gap: 5vw;
+  }
+  .companies img {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    grid-template-columns: repeat(3, 30%);
+    padding: 50px 0;
+  }
+  footer :first-child {
+    grid-column: span 1;
+  }
+  footer :first-child img {
+    width: 80%;
+  }
+  footer :first-child p {
+    font-size: 20px;
+  }
+
+  footer h4 {
+    margin-top: 0;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .gridText :nth-child(2) {
+    font-size: 11px;
+  }
+
+   .eventCell p {
+    font-size: 10px !important;
+  }
+
+  .eventCell button {
+    padding: 5px;
+    font-size: 10px;
+    width: 70%;
+
+  }
+  .channels h2 {
+    font-size: 35px;
+  }
+  .videoTitle {
+    padding: 10px;
+  }
+
+  .subscribe h2 {
+    font-size: 20px;
+  }
+
+  .subscribeInput {
+    position: relative;
+    left: -10px;
+  }
+  .channels > div {
+    padding-top: 160px;
+  }
+  .workWithUs {
+    padding-top: 100px;
+  }
+  .copyright p {
+    font-size: 10px;
   }
 }
